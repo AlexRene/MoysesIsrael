@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <header className="flex justify-between p-2 px-12 items-center">
-        <Link href='/' className="text-center">Moyses<br/>Israel</Link>
+        <Link href='/' className="text-center leading-3 hover:text-red-950 ease-in-out duration-200 hover:font-semibold">Moyses<br/>Israel</Link>
         <div className="flex item-center justify-center">
           <Link href='/' className="px-5 text-slate-800 hover:text-slate-400 hover:underline self-center"><p className="">Inicio</p></Link>
           <Link href='/' className="px-5 text-slate-800 hover:text-slate-400 hover:underline self-center">Memorial</Link>
