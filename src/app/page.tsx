@@ -1,113 +1,67 @@
-import Image from 'next/image'
+// Libs
+import Link from "next/link"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <header className="flex justify-between p-2 px-12 items-center">
+        <Link href='/' className="text-center">Moyses<br/>Israel</Link>
+        <div className="flex item-center justify-center">
+          <Link href='/' className="px-5 text-slate-800 hover:text-slate-400 hover:underline self-center"><p className="">Inicio</p></Link>
+          <Link href='/' className="px-5 text-slate-800 hover:text-slate-400 hover:underline self-center">Memorial</Link>
+          <Link href='/' className="px-5 text-slate-800 hover:text-slate-400 hover:underline self-center">Biografia</Link>
+          <Link href='/' className="px-5 text-slate-800 hover:text-slate-400 hover:underline self-center">Contato</Link>
+          <Link href='/' ><button className="border-yellow-500 border-x-2 border-y-2 text-zinc-900 px-5 py-1.5 rounded-md hover:text-zinc-50 hover:bg-yellow-500 transition-all ease-in-out duration-300">Podcast</button></Link>
+        </div>
+      </header>
+      <div className="flex flex-col justify-center text-center w-screen bg-zinc-900 py-60">
+        <h2 className="text-[60px] leading-[60px] text-zinc-200 font-semibold">MUSEU<br />Moysés Israel</h2>
+        <p className="text-zinc-200 py-5 px-32">A contribuição excepcional para a compreensão do processo de desenvolvimento do Estado do Amazonas e a Amazônia como um todo, passa obrigatoriamente pela ação do homem Moysés Israel.</p>
+      </div>
+      <div className="flex py-32 px-20 justify-evenly leading-10 flex-wrap">
+        <div className="bg-zinc-700 w-[400px] h-[600px]"></div>
+        <div className="w-[600px]">
+            <p className="text-[60px] text-center font-semibold mt-4">Em tempos sem<br />esperança?</p>
+            <p className="font-bold text-center">Moysés Israel</p>
+            <p className="leading-7 mt-2">Nasceu em 10 de fevereiro de 1924 na cidade de Manaus sob os cuidados da parteira D. Lidia.
+            Filho de Salomão Benarrós Israel e Carlota Benaion Sabbá.
+            O sr. Moysés Israel, o primogênito da família Israel, logo se revelou um líder nato, com todo o vigor para o trabalho incomum. Aos 18 anos foi emancipado por sua mãe, dona Cotinha, condição op legis, para se tornar sócio da firma I. B. Sabbá & Cia.
+            No trato leve e maneiroso com as pessoas, dono de irradiadora simpatia, de sorriso constante e aberto, desde cedo foi capaz de dialogar com pessoas de diversos níveis culturais e obter resultados sinérgicos.
+            Começou aí a consolidação de um elo importantíssimo de uma equipe que fez prosperar múltiplas atividades e produziu significativos avanços, cujas marcas se encontram estampadas no cotidiano de toda a sociedade que descendeu dessa época.
+            Este pioneiro pode ser conceituado como uma estrela de primeira
+            grandeza a irradiar luz para todos aqueles que
+            se permitem aprender com este exemplo viva de compromisso, dedicação e amor à sua terra querida – 0 Amazonas.</p>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="bg-zinc-900 w-screen flex justify-around text-zinc-50 py-36 flex-wrap">
+        <div className="flex gap-10 p-10 text-[28px] font-light text-center border rounded-md self-center">
+          <p className="leading-10"><span className="font-bold text-[42px] ">1924</span><br />Nascimento</p>
+          <p className="leading-10"><span className="font-bold text-[42px]">2016</span><br />Falecimento</p>
+        </div>
+        <div className="">
+          <p className="uppercase text-xl font-semibold text-center sm:mt-4 md:mt-4">Principais Realizações</p>
+          <div className="flex flex-col border p-4 rounded-md mt-4 w-[600px]  max-sm:w-[400px]">
+            <ul className="text-zinc-50 gap-5 flex flex-col">
+              <li className="border-b-2 border-zinc-50"><span className="font-semibold">1945:</span><p>Moyses Benarros Israel ao 21 anos é premiado pela Rubber Development Corporation - Reconhecimento à sua contribuição ao acordo da borracha na Amazônia;</p></li>
+              <li className="border-b-2 border-zinc-50"><span className="font-semibold">1953:</span><p>Participou da construção e operação da Refinaria de Petróleo de Manaus;
+              </p></li>
+              <li className="border-b-2 border-zinc-50"><span className="font-semibold">1960:</span><p>Participou da fundação e instalação da Federação das Indústrias do Amazonas (Fieam)
+              </p></li>
+              <li className="border-b-2 border-zinc-50"><span className="font-semibold">2001:</span><p>Moção de agrececimento da Ufam pela doação do terreno Cacaia Grande;
+              </p></li>
+            </ul>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="flex justify-center items-center py-20 flex-col px-44 bg-zinc-200">
+        <div className="h-64 w-64 rounded-full bg-slate-500 shadow-xl shadow-slate-950 mb-12"></div>
+        <p className="mb-2 text-slate-800">“O exemplo de vida, luta, trabalho, perseverança, determinação e amor ao próximo sem distinção de raça, cor ou credo, deve ser o mais importante legado ás gerações e pósteras de um homem por inteiro, que é Moysés Benarrós Israel.”</p>
+        <p className="text-zinc-500 font-extrabold">ETELVINA GARCIA</p>
       </div>
+      <footer className="flex flex-col justify-center items-center py-20 bg-zinc-900">
+        <div className="w-[200px] h-[200px] bg-slate-50 rounded-full shadow-md shadow-black"></div>
+        <p className="mt-4 text-slate-100 font-semibold">UFAM</p>
+      </footer>
     </main>
   )
 }
