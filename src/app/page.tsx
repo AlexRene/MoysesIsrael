@@ -33,14 +33,14 @@ export default function Home() {
             se permitem aprender com este exemplo viva de compromisso, dedicação e amor à sua terra querida – O Amazonas.</p>
         </div>
       </div>
-      <div className="bg-zinc-900 w-screen flex justify-around text-zinc-50 py-36 flex-wrap flex-grow-0 flex-shrink-0">
-        <div className="flex gap-10 p-10 text-[28px] font-light text-center border rounded-md self-center max-sm:border-none max-sm:p-0">
+      <div className="bg-zinc-900 w-screen flex justify-around text-zinc-50 py-36 flex-wrap">
+        <div className="flex gap-[10%] justify-center p-10 text-[28px] font-light text-center border rounded-md self-center max-sm:border-none max-sm:p-0">
           <p className="leading-10"><span className="font-bold text-[42px] max-sm:text-[32px] ">1924</span><br />Nascimento</p>
           <p className="leading-10"><span className="font-bold text-[42px] max-sm:text-[32px]">2016</span><br />Falecimento</p>
         </div>
         <div className="">
           <p className="uppercase text-xl font-semibold text-center sm:mt-4 md:mt-4">Principais Realizações</p>
-          <div className="flex flex-col border p-4 rounded-md mt-4 w-[600px]  max-sm:w-[400px]">
+          <div className="flex flex-col border p-4 rounded-md mt-4 w-[600px]  max-sm:w-[80%] max-sm:mx-auto">
             <ul className="text-zinc-50 gap-5 flex flex-col">
               <li className="border-b-2 border-zinc-50"><span className="font-semibold">1945:</span><p>Moyses Benarros Israel ao 21 anos é premiado pela Rubber Development Corporation - Reconhecimento à sua contribuição ao acordo da borracha na Amazônia;</p></li>
               <li className="border-b-2 border-zinc-50"><span className="font-semibold">1953:</span><p>Participou da construção e operação da Refinaria de Petróleo de Manaus;
