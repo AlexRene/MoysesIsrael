@@ -7,13 +7,13 @@ import Image3 from "../../assets/images/IMG_5054.jpg"
 import Image4 from "../../assets/images/IMG_5051.jpg"
 import Image5 from "../../assets/images/DJI_0668.jpg"
 import Image6 from "../../assets/images/DJI_0678.jpg"
-
+import Footer from "@/app/components/footer"
 export default function Biografia(){
     return(
         <main>
-            <div className="flex flex-col justify-center text-center bg-zinc-900 h-screen">
-                <h2 className="text-[60px] font-semibold text-zinc-200 py-5">Biografia</h2>
-                <p className="text-justify px-40 text-zinc-200 text-[20px]">Moysés Benarrós Israel nasceu em Manaus, em 1924. Era o primogênito do casal Salomon Benarrós Israel e Carlota Sabbá Israel. 
+            <div className="flex flex-col justify-center items-center text-center bg-zinc-900 py-[5rem]">
+                <h2 className="text-[60px] font-semibold text-zinc-200 py-1">Biografia</h2>
+                <p className="text-justify w-[70%] text-zinc-200 text-[20px]">Moysés Benarrós Israel nasceu em Manaus, em 1924. Era o primogênito do casal Salomon Benarrós Israel e Carlota Sabbá Israel. 
                     Ainda jovem passou a ajudar o tio, Isaac Sabbá, pioneiro e construtor da Refinaria de Petróleo de Manaus. 
                     O empresário teve a sua vida ligada à história do Estado, principalmente ao setor da economia, onde atuou como empresário nos mais diversos setores.
                     Entre muitos cargos ocupados Moysés Israel foi vice-presidente da Cia Brasileira de Plantações.
@@ -47,20 +47,16 @@ export default function Biografia(){
                 <h2>Fotos de Moysés Israel</h2>
             </div>
 
-            <div className="grid gap-4 grid-cols-3 grid-rows-2 text-black px-8 pb-8">
-                <Image src={Image1} alt="foto1" className="w-full h-full" />
-                <Image src={Image2} alt="foto1" className="w-full h-full"/>
-                <Image src={Image3} alt="foto1" className="w-full h-full"/>
-                <Image src={Image4} alt="foto1" className="w-full h-full"/>
-                <Image src={Image5} alt="foto1" className="w-full h-full"/>
-                <Image src={Image6} alt="foto1" className="w-full h-full"/>
+            <div className="flex flex-wrap justify-center gap-6 text-black px-2 pb-8">
+            <div className="w-[350px] h-[350px] ma"><Image src={Image1} alt="foto1" className="w-full h-full" /></div>
+            <div className="w-[350px] h-[350px]"><Image src={Image2} alt="foto1" className="w-full h-full" /></div>
+            <div className="w-[350px] h-[350px]"><Image src={Image3} alt="foto1" className="w-full h-full" /></div>
+            <div className="w-[350px] h-[350px]"><Image src={Image4} alt="foto1" className="w-full h-full" /></div>
+            <div className="w-[350px] h-[350px]"><Image src={Image5} alt="foto1" className="w-full h-full" /></div>
+            <div className="w-[350px] h-[350px]"><Image src={Image6} alt="foto1" className="w-full h-full" /></div>
             </div>
 
-            <div className="flex justify-center items-center py-20 flex-col px-44 bg-zinc-200 max-sm:px-20">
-                <div className="h-64 w-64 rounded-full bg-slate-500 shadow-xl shadow-slate-950 mb-12"></div>
-                <p className="mb-2 text-slate-800">“O exemplo de vida, luta, trabalho, perseverança, determinação e amor ao próximo sem distinção de raça, cor ou credo, deve ser o mais importante legado ás gerações e pósteras de um homem por inteiro, que é Moysés Benarrós Israel.”</p>
-                <p className="text-zinc-500 font-extrabold text-center">ETELVINA GARCIA</p>
-            </div>
+            <Footer/>
         </main>
     )
 }
