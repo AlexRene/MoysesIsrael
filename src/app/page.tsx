@@ -4,23 +4,13 @@ import Link from "next/link"
 export default function Home() {
   return (
     <main>
-      <header className="flex justify-between p-2 px-12 items-center  ">
-        <Link href='/' className="text-center leading-3 hover:text-red-950 ease-in-out duration-200 hover:font-semibold">Moyses<br/>Israel</Link>
-        <div className="flex item-center justify-center max-sm:hidden">
-          <Link href='/' className="px-5 text-slate-800 text-slate-400 self-center drop-shadow-lg"><p className="">Inicio</p></Link>
-          <Link href='/' className="px-5 text-slate-800 hover:text-slate-400 hover:underline self-center">Memorial</Link>
-          <Link href='/' className="px-5 text-slate-800 hover:text-slate-400 hover:underline self-center">Biografia</Link>
-          <Link href='/' className="px-5 text-slate-800 hover:text-slate-400 hover:underline self-center">Contato</Link>
-          <Link href='/' ><button className="border-yellow-500 border-2 text-zinc-900 px-5 py-1.5 rounded-md hover:text-zinc-50 hover:bg-yellow-500 transition-all ease-in-out duration-300">Podcast</button></Link>
-        </div>
-      </header>
       <div className="flex flex-col justify-center text-center w-screen bg-zinc-900 py-60">
         <h2 className="text-[60px] leading-[60px] text-zinc-200 font-semibold">MUSEU<br />Moysés Israel</h2>
         <p className="text-zinc-200 py-5 px-32 max-sm:px-10">A contribuição excepcional para a compreensão do processo de desenvolvimento do Estado do Amazonas e a Amazônia como um todo, passa obrigatoriamente pela ação do homem Moysés Israel.</p>
       </div>
       <div className="flex py-32 px-20 justify-evenly leading-10 flex-wrap ">
         <div className="bg-zinc-700 w-[400px] h-[600px] rounded-2xl max-sm:h-[400px]"></div>
-        <div className="w-[600px]">
+        <div className="w-[600px] text-black">
             <p className="text-[60px] text-center font-semibold mt-4">Em tempos sem<br />esperança?</p>
             <p className="font-bold text-center">Moysés Israel</p>
             <p className="leading-7 mt-2">Nasceu em 10 de fevereiro de 1924 na cidade de Manaus sob os cuidados da parteira D. Lidia.
