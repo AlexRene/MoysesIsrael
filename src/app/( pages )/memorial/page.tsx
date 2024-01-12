@@ -36,8 +36,8 @@ export default function Memorial(){
             </div>
 
             <div className="flex justify-center items-center py-20 flex-col px-44  max-sm:px-20 text-zinc-200 img5 h-screen">
-                <h2 className="font-semibold text-[40px] pb-6">Moysés Benarrós Israel</h2>
-                <p className="text-[20px]">“Trago doses de ajuda, principalmente aos jovens estudantes. Acho importante contribuir
+                <h2 className="font-semibold text-[40px] p-2 bg-zinc-800">Moysés Benarrós Israel<br/></h2>
+                <p className="text-[20px] p-2 bg-zinc-800">“Trago doses de ajuda, principalmente aos jovens estudantes. Acho importante contribuir
                     para um mundo melhor e vejo a educação como um caminho sólido e certeiro.”</p>
             </div>
             <div className="flex flex-col justify-center text-center pt-10">
